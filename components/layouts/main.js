@@ -1,6 +1,6 @@
-import { Box, Container } from '@chakra-ui/layout'
-import Head from 'next/head'
-import { Nav } from '../nav'
+import { Box, Container } from "@chakra-ui/layout"
+import Head from "next/head"
+import { Nav } from "../nav"
 
 export const Main = ({ children, router }) => (
   <Box as="main">

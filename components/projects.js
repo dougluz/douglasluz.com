@@ -1,10 +1,12 @@
-import { Image } from "@chakra-ui/image";
-import { Box, Heading, Link, SimpleGrid, Text, VStack } from "@chakra-ui/layout";
-import { Section } from "./section";
+import { Image } from "@chakra-ui/image"
+import { Box, Heading, Link, SimpleGrid, Text, VStack } from "@chakra-ui/layout"
+import { Section } from "./section"
 
 export const Projects = () => (
   <Section>
-    <Heading as="h2" variant="section-title">Projects that I worked on</Heading>
+    <Heading as="h2" variant="section-title">
+      Projects that I worked on
+    </Heading>
     <Box>
       <SimpleGrid columns={[1, 2]}>
         <VStack>
