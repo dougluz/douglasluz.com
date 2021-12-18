@@ -8,11 +8,11 @@ export const Projects = () => (
       Projects that I worked on
     </Heading>
     <Box>
-      <SimpleGrid columns={[1, 2]}>
-        <VStack>
+      <SimpleGrid spacing={4} columns={[1, 2]}>
+        <VStack spacing={0}>
           <Link href="http://libercapital.com.br" isExternal>
             <Image
-              src="images/liber.png"
+              src="images/liber.webp"
               maxW={300}
               borderRadius={10}
               placeholder="blur"
@@ -23,10 +23,10 @@ export const Projects = () => (
           <Text fontWeight="bold">Liber Capital</Text>
           <Text>Front-end developer</Text>
         </VStack>
-        <VStack>
+        <VStack spacing={0}>
           <Link href="http://frentecorretora.com.br" isExternal>
             <Image
-              src="images/frente.png"
+              src="images/frente.webp"
               maxW={300}
               borderRadius={10}
               placeholder="blur"
