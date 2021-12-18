@@ -1,4 +1,4 @@
-import { Container, Flex, Text } from "@chakra-ui/react";
+import { Container, Flex, Text } from "@chakra-ui/react"
 
 export const Footer = () => (
   <Container as="footer" maxW="container.md" css={{ bottom: 0 }}>
