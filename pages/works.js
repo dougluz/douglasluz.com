@@ -41,9 +41,9 @@ const experiences = [
     technologies: ["Vue", "Node", "Postgres"],
     activities: [
       "Development of a platform for HR to register and share new jobs opportunities in the company and receive candidates curriculum (about 400 unique candidates in a year).",
-      "Development of a web application to allow to all employees get information like e-mail, Whatsapp, and Skype user to enter in contact with other employees;",
+      "Development of a web application to allow to all employees to get information like e-mail, Whatsapp, and Skype user to enter in contact with other employees;",
       "Development of a Node.js application that reads a sheet and alerts HR and IT department about employees that are going or returning on vacations in the current week;",
-      "Remote and presential IT support;",
+      "Remote and in-person IT support;",
       "Servers maintenance;",
       "Software and Hardware maintenance;",
       "Constant talk with the directory about new technologies presenting how they can use them to improve internal processes."

@@ -17,7 +17,7 @@ const bioInfo = [
   },
   {
     date: "Sep 2015",
-    description: "Working as intern on SESI"
+    description: "Working as an intern on SESI"
   },
   {
     date: "Oct 2017",
@@ -29,7 +29,7 @@ const bioInfo = [
   },
   {
     date: "Feb 2018",
-    description: "Graduated as Information Systems BA"
+    description: "Graduated with an Information Systems BA"
   },
   {
     date: "Nov 2020",
