@@ -15,8 +15,10 @@ export const Main = ({ children, router }) => (
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@douguiluz" />
       <meta name="twitter:creator" content="@douguiluz" />
+      <meta name="twitter:image" content="/banner.png" />
       <meta property="og:site_name" content="Douglas Luz Homepage" />
       <meta property="og:type" content="website" />
+      <meta property="og:image" content="/banner.png" />
       <title>Douglas Luz - Homepage</title>
     </Head>
     <Nav path={router.asPath} />
