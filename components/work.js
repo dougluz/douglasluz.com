@@ -20,8 +20,8 @@ export const Work = ({ company, position, date, technologies, activities }) => (
       {date}
     </Text>
     <UnorderedList spacing={2}>
-      {activities.map((activity) => (
-        <ListItem key={activity}>{activity}</ListItem>
+      {activities.map((activity, key) => (
+        <ListItem key={key}>{activity}</ListItem>
       ))}
     </UnorderedList>
     <Box
