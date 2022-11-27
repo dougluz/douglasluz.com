@@ -3,8 +3,8 @@ import NextLink from "next/link"
 
 export const LinkItem = ({ href, path, _target, children, ...props }) => {
   const active = path === href
-  const inactiveColor = useColorModeValue("gray200", "whiteAlpha.900")
-  const activeBackgroundColor = useColorModeValue("facebook", "purple")
+  const inactiveColor = useColorModeValue("black", "whiteAlpha.900")
+  const activeBackgroundColor = useColorModeValue("gray.400", "purple")
   const activeColor = useColorModeValue("#000", "#fff")
   return (
     <NextLink href={href} passHref>
