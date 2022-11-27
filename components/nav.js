@@ -42,20 +42,20 @@ export const Nav = (props) => {
               aria-label="Options"
             />
             <MenuList>
-              <NextLink href="/">
+              <NextLink href="/" legacyBehavior>
                 <MenuItem as={Link}>Home</MenuItem>
               </NextLink>
-              <NextLink href="/works">
+              <NextLink href="/works" legacyBehavior>
                 <MenuItem as={Link}>Works</MenuItem>
               </NextLink>
-              <NextLink href="/contact">
+              <NextLink href="/contact" legacyBehavior>
                 <MenuItem as={Link}>Contact</MenuItem>
               </NextLink>
             </MenuList>
           </Menu>
         </Box>
         <Flex align="center">
-          <NextLink href="/" passHref>
+          <NextLink href="/">
             <Text
               style={{ cursor: "pointer" }}
               mr={8}
@@ -76,10 +76,10 @@ export const Nav = (props) => {
           mt={{ base: 4, md: 0 }}
           spacing={2}
         >
-          <LinkItem path={path} href="/works" passHref>
+          <LinkItem path={path} href="/works">
             Works
           </LinkItem>
-          <LinkItem path={path} href="/contact" passHref>
+          <LinkItem path={path} href="/contact">
             Contact
           </LinkItem>
         </Stack>

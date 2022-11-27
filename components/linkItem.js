@@ -7,7 +7,7 @@ export const LinkItem = ({ href, path, _target, children, ...props }) => {
   const activeBackgroundColor = useColorModeValue("gray.400", "purple")
   const activeColor = useColorModeValue("#000", "#fff")
   return (
-    <NextLink href={href} passHref>
+    <NextLink href={href} passHref legacyBehavior>
       <Link
         p={2}
         bg={active ? activeBackgroundColor : undefined}
