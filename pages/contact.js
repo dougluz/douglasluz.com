@@ -1,4 +1,3 @@
-import { ExternalLinkIcon } from "@chakra-ui/icons"
 import {
   Box,
   Button,
@@ -10,11 +9,15 @@ import {
   useColorModeValue,
   useToast,
   Link,
-  VStack
+  HStack
 } from "@chakra-ui/react"
 import axios from "axios"
 import { useForm } from "react-hook-form"
+import { IconContext } from "react-icons"
+import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io"
+import { FiMail } from "react-icons/fi"
 import { Section } from "../components/section"
+import { ContactCard } from "../components/ContactCard"
 
 const Contact = () => {
   const {
@@ -24,6 +27,7 @@ const Contact = () => {
     formState: { errors, isSubmitting }
   } = useForm()
   const toast = useToast()
+  const iconColor = useColorModeValue("black", "purple")
 
   const onSubmit = async (values) => {
     try {
@@ -56,20 +60,31 @@ const Contact = () => {
       >
         Contact
       </Heading>
-      <Heading as="h2" variant="section-title">
-        My social networks and email
-      </Heading>
-      <VStack spacing={2} align="left" mb={4}>
-        <Link href="https://www.linkedin.com/in/douguiluz/" isExternal>
-          LinkedIn <ExternalLinkIcon mx="2px" />
-        </Link>
-        <Link href="https://www.github.com/dougluz/" isExternal>
-          Github <ExternalLinkIcon mx="2px" />
-        </Link>
-        <Link href="mailto:hi@douglasluz.com" isExternal>
-          Email <ExternalLinkIcon mx="2px" />
-        </Link>
-      </VStack>
+      <HStack
+        spacing={2}
+        align="center"
+        mb={4}
+        width="full"
+        justifyContent="center"
+      >
+        <IconContext.Provider value={{ color: iconColor, size: 50 }}>
+          <ContactCard label="LinkedIn">
+            <Link href="https://www.linkedin.com/in/douguiluz/" isExternal>
+              <IoLogoLinkedin />
+            </Link>
+          </ContactCard>
+          <ContactCard>
+            <Link href="https://www.github.com/dougluz/" isExternal>
+              <IoLogoGithub />
+            </Link>
+          </ContactCard>
+          <ContactCard>
+            <Link href="mailto:hi@douglasluz.com" isExternal>
+              <FiMail />
+            </Link>
+          </ContactCard>
+        </IconContext.Provider>
+      </HStack>
       <Heading as="h2" variant="section-title">
         Or send me a message
       </Heading>
