@@ -42,13 +42,13 @@ export const Nav = (props) => {
               aria-label="Options"
             />
             <MenuList>
-              <NextLink href="/" passHref>
+              <NextLink href="/">
                 <MenuItem as={Link}>Home</MenuItem>
               </NextLink>
-              <NextLink href="/works" passHref>
+              <NextLink href="/works">
                 <MenuItem as={Link}>Works</MenuItem>
               </NextLink>
-              <NextLink href="/contact" passHref>
+              <NextLink href="/contact">
                 <MenuItem as={Link}>Contact</MenuItem>
               </NextLink>
             </MenuList>
@@ -74,7 +74,7 @@ export const Nav = (props) => {
           alignItems="center"
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
-          spacing={8}
+          spacing={2}
         >
           <LinkItem path={path} href="/works" passHref>
             Works

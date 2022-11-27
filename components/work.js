@@ -13,7 +13,7 @@ export const Work = ({ company, position, date, technologies, activities }) => (
     <Heading as="h4" fontSize={18} variant="section-title">
       {company}
     </Heading>
-    <Text size="md" pb={2} pt={2}>
+    <Text size="md" fontWeight="bold" pb={2} pt={2}>
       {position}
     </Text>
     <Text size="md" pb={2}>
