@@ -27,7 +27,7 @@ const Contact = () => {
     formState: { errors, isSubmitting }
   } = useForm()
   const toast = useToast()
-  const iconColor = useColorModeValue("black", "purple")
+  const iconColor = useColorModeValue("black", "white")
 
   const onSubmit = async (values) => {
     try {
