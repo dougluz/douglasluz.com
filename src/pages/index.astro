@@ -1,17 +1,41 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Link from "../components/Link.astro";
 ---
 
 <Layout title="Douglas Luz">
-	<main>
-    <h1>Hello</h1>
+  <main>
+    <h1>Greetings</h1>
     <p>
-      My name is Douglas! <br/>
-      Currently i work as <b>Software Engineer</b> at <b><a href="www.rdstation.com">RD Station</a></b> in the RD Station Marketing product. Previously i had worked at <b><a href="www.libercapital.com.br">Liber</a></b> and <b></b>
+      I'm Doug, a dedicated <b>Software Engineer</b> currently shaping innovations at <Link
+        href="http://www.rdstation.com"
+        text="RD Station"
+      />, the powerhouse behind Latin America's largest SaaS, RD Station
+      Marketing. With prior experience at <Link
+        href="http://www.libercapital.com.br"
+        text="Liber"
+      /> and <Link href="http://www.frentecorretora.com.br" text="Frente Corretora" />,
+      my expertise centers around <b>Ruby on Rails</b> and <b>React</b>. My name is Douglas! <br
+      />
     </p>
-	</main>
+    <p>
+      My home is shared with three dogs: Zeca, Nina, and Xuxa. When I'm not
+      immersed in programming, you'll find me exploring hobbies like collecting
+      and listening to CDs, watching F1, playing video games, and diving into
+      architecture literature.
+    </p>
+    <p>
+      Feel free to connect with me on <Link
+        href="http://www.linkedin.com/in/douguiluz"
+        text="Linkedin"
+      />
+    </p>
+  </main>
 </Layout>
 
 <style>
+  p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
 </style>
