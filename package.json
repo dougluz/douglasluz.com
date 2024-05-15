@@ -7,6 +7,9 @@
     "start": "next start",
     "lint": "eslint components lib pages --max-warnings=0 --fix"
   },
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
     "@chakra-ui/icons": "^1.1.1",
     "@chakra-ui/react": "^1.7.2",
