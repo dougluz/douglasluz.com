@@ -34,6 +34,10 @@ const bioInfo = [
   {
     date: "Nov 2020",
     description: "Joined ZRP as full-stack developer"
+  },
+  {
+    date: "Jul 2023",
+    description: "Joined RD Station as Software Engineer"
   }
 ]
 

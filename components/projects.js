@@ -10,6 +10,21 @@ export const Projects = () => (
     <Box>
       <SimpleGrid spacing={4} columns={[1, 2]}>
         <VStack spacing={0}>
+          <Link href="www.rdstation.com" isExternal>
+            <Image
+              src="images/rd.png"
+              maxW={300}
+              borderRadius={10}
+              placeholder="blur"
+              loading="lazy"
+              alt="Liber page printscreen"
+            />
+          </Link>
+          <Text fontWeight="bold">RD Station</Text>
+          <Text>Software Engineer</Text>
+        </VStack>
+
+        <VStack spacing={0}>
           <Link href="http://libercapital.com.br" isExternal>
             <Image
               src="images/liber.webp"
