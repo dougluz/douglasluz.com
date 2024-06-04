@@ -4,7 +4,7 @@ import { Footer } from "../footer"
 import { Nav } from "../nav"
 
 export const Main = ({ children, router }) => (
-  <Box as="main">
+  <main>
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content="Douglas Luz homepage" />
@@ -26,5 +26,5 @@ export const Main = ({ children, router }) => (
       {children}
     </Container>
     <Footer />
-  </Box>
+  </main>
 )

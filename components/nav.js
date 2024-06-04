@@ -1,6 +1,5 @@
 import NextLink from "next/link"
-import { useColorModeValue } from "@chakra-ui/color-mode"
-import { Box, Container, Flex, Stack, Text } from "@chakra-ui/layout"
+import { Box, Flex, Stack, Text } from "@chakra-ui/layout"
 import { LinkItem } from "./linkItem"
 import {
   IconButton,
@@ -13,27 +12,11 @@ import {
 import { HamburgerIcon } from "@chakra-ui/icons"
 import { ThemeButton } from "./themeButton"
 
-export const Nav = (props) => {
-  const { path } = props
-
+export const Nav = ({ path }) => {
   return (
-    <Box
-      position="fixed"
-      width="100%"
-      bg={useColorModeValue("#d4cbc140", "#09090a80")}
-      css={{ backdropFilter: "blur(10px)" }}
-      zIndex={1}
-      {...props}
-    >
-      <Container
-        display="flex"
-        p={2}
-        maxW="container.md"
-        wrap="wrap"
-        align="center"
-        justify="space-between"
-      >
-        <Box mr={2} display={{ base: "inline-block", md: "none" }}>
+    <div className="fixed w-full flex justify-center bg-yellow-50 z-10">
+      <div className="flex w-full p-2 max-w-3xl flex-wrap items-center justify-between">
+        <div className="mr-2 inline-block md:invisible md:mr-0 md:w-0">
           <Menu isLazy id="navbar-menu">
             <MenuButton
               as={IconButton}
@@ -53,40 +36,25 @@ export const Nav = (props) => {
               </NextLink>
             </MenuList>
           </Menu>
-        </Box>
-        <Flex align="center">
+        </div>
+        <div className="flex align-center">
           <NextLink href="/">
-            <Text
-              style={{ cursor: "pointer" }}
-              mr={8}
-              fontSize="lg"
-              fontWeight="bold"
-            >
-              Douglas
-            </Text>
+            <p className="cursor-pointer mr-8 text-lg font-bold">Douglas</p>
           </NextLink>
-        </Flex>
+        </div>
 
-        <Stack
-          direction={{ base: "column", md: "row" }}
-          display={{ base: "none", md: "flex" }}
-          width={{ base: "full", md: "auto" }}
-          alignItems="center"
-          flexGrow={1}
-          mt={{ base: 4, md: 0 }}
-          spacing={2}
-        >
+        <div className="hidden flex-row items-center gap-4 md:inline-block">
           <LinkItem path={path} href="/works">
             Works
           </LinkItem>
           <LinkItem path={path} href="/contact">
             Contact
           </LinkItem>
-        </Stack>
-        <Box align="right" flex={1}>
+        </div>
+        <div className="flex flex-1 left-0 justify-end">
           <ThemeButton />
-        </Box>
-      </Container>
-    </Box>
+        </div>
+      </div>
+    </div>
   )
 }
