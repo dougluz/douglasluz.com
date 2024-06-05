@@ -1,5 +1,5 @@
-import { MoonIcon, SunIcon } from "@chakra-ui/icons"
-import { IconButton, useColorMode, useColorModeValue } from "@chakra-ui/react"
+import { MoonIcon } from "@chakra-ui/icons"
+import { useColorMode, useColorModeValue } from "@chakra-ui/react"
 import { AnimatePresence, motion } from "framer-motion"
 
 export const ThemeButton = () => {
@@ -15,12 +15,12 @@ export const ThemeButton = () => {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.2 }}
       >
-        <IconButton
-          aria-label="Switch theme"
-          colorScheme={useColorModeValue("facebook", "purple")}
-          icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
+        <button
+          className="p-4 rounded bg-blue-600 flex items-center justify-center"
           onClick={toggleColorMode}
-        />
+        >
+          <MoonIcon />
+        </button>
       </motion.div>
     </AnimatePresence>
   )
