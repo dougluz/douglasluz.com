@@ -50,9 +50,6 @@ export const Nav = ({ path }) => {
             Contact
           </LinkItem>
         </div>
-        <div className="flex flex-1 left-0 justify-end">
-          <ThemeButton />
-        </div>
       </div>
     </div>
   )
