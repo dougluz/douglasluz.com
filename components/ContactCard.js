@@ -1,10 +1,7 @@
-import { Box, useColorModeValue } from "@chakra-ui/react"
-
 export const ContactCard = ({ children }) => {
-  const borderColor = useColorModeValue("gray.400", "#555558")
   return (
-    <Box p={2} borderRadius={10} border="1px solid" borderColor={borderColor}>
+    <div className="p-2 rounded-lg border-solid border border-black">
       {children}
-    </Box>
+    </div>
   )
 }
