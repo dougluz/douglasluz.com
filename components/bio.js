@@ -1,7 +1,3 @@
-import { Heading, HStack, Text } from "@chakra-ui/layout"
-import { VStack } from "@chakra-ui/react"
-import { Section } from "./section"
-
 const bioInfo = [
   {
     date: "Oct 1997",
@@ -42,19 +38,18 @@ const bioInfo = [
 ]
 
 export const Bio = () => (
-  <Section>
-    <Heading as="h2" variant="section-title">
-      Bio
-    </Heading>
-    <VStack>
+  <section>
+    <h2>Bio</h2>
+    <div>
       {bioInfo.map(({ date, description }, index) => (
-        <HStack key={index} justifyContent="flex-start" w="100%">
-          <Text minW={["20%", "10%"]} fontWeight="bold">
-            {date}
-          </Text>
-          <Text>{description}</Text>
-        </HStack>
+        <div
+          className="flex w-full align-center justify-start gap-2"
+          key={index}
+        >
+          <p className="text-md min-w-20 md:min-w-20 font-bold">{date}</p>
+          <p>{description}</p>
+        </div>
       ))}
-    </VStack>
-  </Section>
+    </div>
+  </section>
 )

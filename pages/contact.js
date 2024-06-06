@@ -16,7 +16,6 @@ import { useForm } from "react-hook-form"
 import { IconContext } from "react-icons"
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io"
 import { FiMail } from "react-icons/fi"
-import { Section } from "../components/section"
 import { ContactCard } from "../components/ContactCard"
 
 const Contact = () => {
@@ -50,7 +49,7 @@ const Contact = () => {
   }
 
   return (
-    <Section>
+    <>
       <Heading
         as="h1"
         size="2xl"
@@ -134,7 +133,7 @@ const Contact = () => {
           </Button>
         </Box>
       </form>
-    </Section>
+    </>
   )
 }
 

@@ -1,5 +1,4 @@
 import NextLink from "next/link"
-import { Box, Flex, Stack, Text } from "@chakra-ui/layout"
 import { LinkItem } from "./linkItem"
 import {
   IconButton,
@@ -14,7 +13,7 @@ import { ThemeButton } from "./themeButton"
 
 export const Nav = ({ path }) => {
   return (
-    <div className="fixed w-full flex justify-center bg-yellow-50 z-10">
+    <div className="fixed w-full flex justify-center bg-yellow-50/50 z-10 backdrop-blur-md">
       <div className="flex w-full p-2 max-w-3xl flex-wrap items-center justify-between">
         <div className="mr-2 inline-block md:invisible md:mr-0 md:w-0">
           <Menu isLazy id="navbar-menu">

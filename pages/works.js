@@ -1,5 +1,4 @@
 import { Heading } from "@chakra-ui/layout"
-import { Section } from "../components/section"
 import { Work } from "../components/work"
 
 const experiences = [
@@ -66,14 +65,14 @@ const experiences = [
 ]
 
 const Works = () => (
-  <Section>
+  <>
     <Heading as="h1" size="2xl" variant="page-title" textAlign="center" mb={10}>
       Works
     </Heading>
     {experiences.map((experience) => (
       <Work key={experiences.company} {...experience} />
     ))}
-  </Section>
+  </>
 )
 
 export default Works
